@@ -1,6 +1,30 @@
 import React from "react";
 import "./Ourcourses.css";
+import Events from "./Events";
 // import oldlady from '/images/oldlady.jpeg'
+
+const eventsData = [
+  {
+    image: "/images/donatefood.jpeg",
+    description: "some event description will be shown here<",
+  },
+  {
+    image: "/images/meetup.jpeg",
+    description: "some event description will be shown here<",
+  },
+  {
+    image: "/images/visitElderly.jpeg",
+    description: "some event description will be shown here<",
+  },
+  {
+    image: "/images/visitPWD.jpeg",
+    description: "some event description will be shown here<",
+  },
+  {
+    image: "/images/oldlady.jpeg",
+    description: "some event description will be shown here<",
+  },
+];
 
 const Ourcourses = () => {
   return (
@@ -19,14 +43,10 @@ const Ourcourses = () => {
           <p>some text will go here describing the displayed course</p>
         </div>
       </div>
-      <div className="eventdiv">
-        <div className="eventimage">
-          <img src="/images/oldlady.jpeg" alt="event1"/>
-        </div>
-        <div>
-          <p>some event description will be shown here</p>
-          <button className="homebtn btnevent">Read more</button>
-        </div>
+      <div className="eventContainer">
+      {eventsData.map((e) => (
+        <Events key={eventsData.indexOf(e)} img={e.image} dsc={e.description} />
+      ))}
       </div>
     </section>
   );
