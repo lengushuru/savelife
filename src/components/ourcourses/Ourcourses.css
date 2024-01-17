@@ -108,5 +108,26 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .sec_top {
+    flex-direction: column;
+    height: auto;
+  }
+  .imagediv {
+    width: 100%;
+    height: 300px;
+  }
+  .textdiv {
+    width: 100%;
+  }
+  .eventdiv {
+    width: 100%;
+  }
+  .eventContainer {
+    width: 100%;
+  }
 }

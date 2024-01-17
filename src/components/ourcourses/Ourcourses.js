@@ -1,30 +1,10 @@
 import React from "react";
 import "./Ourcourses.css";
 import Events from "./Events";
+import {eventData} from "./eventdata.js"
 // import oldlady from '/images/oldlady.jpeg'
 
-const eventsData = [
-  {
-    image: "/images/donatefood.jpeg",
-    description: "some event description will be shown here<",
-  },
-  {
-    image: "/images/meetup.jpeg",
-    description: "some event description will be shown here<",
-  },
-  {
-    image: "/images/visitElderly.jpeg",
-    description: "some event description will be shown here<",
-  },
-  {
-    image: "/images/visitPWD.jpeg",
-    description: "some event description will be shown here<",
-  },
-  {
-    image: "/images/oldlady.jpeg",
-    description: "some event description will be shown here<",
-  },
-];
+const eventsData = eventData
 
 const Ourcourses = () => {
   return (
