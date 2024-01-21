@@ -2,11 +2,22 @@ import React from "react";
 import "./Ourcourses.css";
 import Events from "./Events";
 import {eventData} from "./eventdata.js"
+import { useState } from 'react';
 // import oldlady from '/images/oldlady.jpeg'
 
 const eventsData = eventData
 
 const Ourcourses = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const openPopup = () => {
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+  };
+
   return (
     <section className="content_container">
       <h2 className="title2">Our out courses</h2>
@@ -25,9 +36,12 @@ const Ourcourses = () => {
       </div>
       <div className="eventContainer">
       {eventsData.map((e) => (
-        <Events key={eventsData.indexOf(e)} img={e.image} dsc={e.description} />
+        <Events key={eventsData.indexOf(e)} img={e.image} full_desc = {e.full_description}dsc={e.description} />
       ))}
+
       </div>
+     
+  
     </section>
   );
 };
