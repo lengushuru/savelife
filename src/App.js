@@ -1,6 +1,7 @@
 import Navbar from './components/navbar/Navbar';
 import Home  from './components/home/Home';
 import Ourcourses from './components/ourcourses/Ourcourses';
+import Footer from './components/footer/Footer';
 import './App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Home />
       <Ourcourses />
+      <Footer />
     </div>
   );
 }

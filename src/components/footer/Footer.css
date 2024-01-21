@@ -1,0 +1,20 @@
+.footer_top {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff;
+  height: 8rem;
+  width: 100%;
+  background-color: #000;
+}
+.footer_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 3rem;
+  width: 100%;
+  background-color: rgb(224, 35, 35);
+}
