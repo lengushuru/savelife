@@ -5,12 +5,14 @@ import {data} from './homedata.js'
 const Home = () => {
  
   return (
-    
     <section className="home">
       <h1 className="title">
         <span className="title1">WE HELP THOUSANDS OF CHILDREN TO GET</span><br />
         THEIR EDUCATION SHELTER AND FOOD NOW <br />
-        WE NEED YOUR HELP TO CONTINUE THIS
+      </h1>
+      <h1 className="title_mobile">
+        <span className="title1">WE HELP THOUSANDS OF CHILDREN TO GET</span><br />
+        THEIR EDUCATION SHELTER AND FOOD NOW <br />
       </h1>
       <div className="btn_container">
         <button className="btn1 homebtn">learn more</button>
