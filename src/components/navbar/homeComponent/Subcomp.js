@@ -1,11 +1,11 @@
 import React from 'react'
-
-const Subcomp = (prop) => {
+import '../Navbar.css'
+const Subcomp = ({title,description,btn}) => {
   return (
     <div className='subcomponents'>
-      <h2>{prop.title}</h2>
-      <p>{prop.description}</p>
-      <button>{prop.btn}</button>
+      <h2>{title}</h2>
+      <p>{description}</p>
+      <button>{btn}</button>
     </div>
   )
 }

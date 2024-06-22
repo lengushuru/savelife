@@ -8,7 +8,7 @@ const Home = () => {
     <section className="home">
       <h1 className="title">
         <span className="title1">WE HELP THOUSANDS OF CHILDREN TO GET</span><br />
-        THEIR EDUCATION SHELTER AND FOOD NOW <br />
+        THEIR EDUCATION SHELTER AND FOOD <br />
       </h1>
       <h1 className="title_mobile">
         <span className="title1">WE HELP THOUSANDS OF CHILDREN TO GET</span><br />

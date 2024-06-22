@@ -15,13 +15,14 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
-  background-color: #fff;
+  padding: 0 3rem;
+  background-color: #f87f0a;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
+  color: #444040;
 }
 
 .btnnav{
@@ -37,12 +38,16 @@ ul {
 }
 
 .logo {
-  height: 60px;
+  height: 55px;
   width: auto;
 }
-
+.sub
 .menu {
   display: none;
+}
+
+.navtop{
+  background: #7e2a2a;
 }
 
 @media screen and (max-width: 600px) {
