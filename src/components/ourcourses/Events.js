@@ -18,8 +18,6 @@ const Events = ({img,dsc,full_desc}) => {
     </div>
     <div>
       <p>{dsc}</p>
-      {/* <button className="homebtn btnevent">Read more</button> */}
-    
       <button className="homebtn btnevent"onClick={openPopup}>Read more</button>
 
       {showPopup && (

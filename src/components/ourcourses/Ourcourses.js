@@ -27,7 +27,9 @@ const Ourcourses = () => {
         now we need your help to continue this
       </p>
       <div className="sec_top">
-        <div className="imagediv">soem tex will be here</div>
+        <div className="imagediv">
+          <img src="/images/meetup.jpeg" alt="image"/>
+        </div>
         <div className="textdiv">
           <h3>FEATURED</h3>
           <h4>SHAPE A FUTURE</h4>

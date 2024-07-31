@@ -1,89 +1,74 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Navbottom.css */
+
+.navbottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  position: relative;
+}
+
+.logo {
+  height: 40px;
+}
+
+.menu {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 20px;
 }
 
-.navbottom {
-  
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 3rem;
-  background-color: #f87f0a;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  color: #444040;
-}
-
-.btnnav{
-  padding: 0.5rem 1rem;
-  border: none;
-  color: #fff;
-  border-radius: 50px;
-  font-weight: bold;
-  background-color: #0c911e;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ul li {
   cursor: pointer;
-  text-transform: uppercase;
 }
 
-.logo {
-  height: 55px;
-  width: auto;
-}
-.sub
-.menu {
-  display: none;
-}
-
-.navtop{
-  background: #7e2a2a;
+.btnnav {
+  background-color: #f0a500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
 }
 
-@media screen and (max-width: 600px) {
-  ul {
-    display: block;
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #7e2a2a;
-    width: 100%;
-    height: 100vh;
-    padding: 2rem;
-    /* transform: translateX(100%); */
-    transition: transform 0.5s ease-in-out;
-    z-index: 10000;
-  }
-  .open {
+.btnnav:hover {
+  background-color: #e08e00;
+}
+
+@media (max-width: 768px) {
+  .menu {
     display: block;
   }
-  .btnnav {
+
+  .logo.close {
     display: none;
   }
 
-.menu {
-  display: block;
-  font-size: 20px;
-  cursor: pointer;
-  color: #181717;
-  padding: 14px 16px;
-  text-align: center;
-}
-  .open {
-    display: block;
+  ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
   }
-  .close {
+
+  ul.open {
+    display: flex;
+  }
+
+  .btnnav {
     display: none;
   }
 }
